@@ -18,7 +18,7 @@ class Page1 extends React.Component {
             <img
               src={require("../img/image 5.png")}
               alt="logo2"
-              className="w-1/1 h-auto" // Розмір картинки залишиться тим самим
+              className="w-1/1 h-auto"
             />
           </div>
 

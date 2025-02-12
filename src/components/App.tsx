@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Header from "./Header.tsx";
-import Page1 from "./page1.tsx";
-import Page2 from "./page2.tsx";
-import Page3 from "./Page3.tsx";
+import Page1 from "../pages/page1.tsx";
+import Page2 from "../pages/page2.tsx";
+import Page3 from "../pages/Page3.tsx";
 import Home from "./Home.tsx";
 
 const App = () => {

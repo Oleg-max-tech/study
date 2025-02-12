@@ -1,4 +1,37 @@
 import React from "react";
+import WorkStages from "../components/WorkStages.tsx"; // Припустимо, що компонент WorkStages є у вас на Page2
+
+const steps = [
+  {
+    number: "1",
+    title: "Підготовка",
+    points: [
+      "Консультація.",
+      "Оплата.",
+      "Проведення брейншторму з клієнтом.",
+      "Погодження структури.",
+      "Погодження дизайну.",
+    ],
+  },
+  {
+    number: "2",
+    title: "Розробка",
+    points: [
+      "Програмування погодженої, фінальної версії сайту.",
+      "Мобільна адаптація.",
+      "Тестування сайту.",
+    ],
+  },
+  {
+    number: "3",
+    title: "Запуск",
+    points: [
+      "Навчання по користуванню.",
+      "Деплой сайту на домен та хостинг.",
+      "Місяць безкоштовного тех. обслуговування.",
+    ],
+  },
+];
 
 class Page3 extends React.Component {
   render() {
@@ -60,55 +93,8 @@ class Page3 extends React.Component {
         <h2 className="text-3xl font-bold text-center lg:text-left mt-16">
           Етапи роботи
         </h2>
-        <div className="flex flex-col md:flex-row justify-center mt-10 gap-8">
-          {[
-            {
-              number: "1",
-              title: "Підготовка",
-              points: [
-                "Консультація.",
-                "Оплата.",
-                "Проведення брейншторму з клієнтом.",
-                "Погодження структури.",
-                "Погодження дизайну.",
-              ],
-            },
-            {
-              number: "2",
-              title: "Розробка",
-              points: [
-                "Програмування погодженої, фінальної версії сайту.",
-                "Мобільна адаптація.",
-                "Тестування сайту.",
-              ],
-            },
-            {
-              number: "3",
-              title: "Запуск",
-              points: [
-                "Навчання по користуванню.",
-                "Деплой сайту на домен та хостинг.",
-                "Місяць безкоштовного тех. обслуговування.",
-              ],
-            },
-          ].map((step, index) => (
-            <div
-              key={index}
-              className="border-2 border-gray-300 rounded-lg shadow-md p-6 w-full md:w-80 relative"
-            >
-              <span className="absolute top-0 left-0 w-10 h-1 bg-yellow-400"></span>
-              <h3 className="text-5xl font-bold text-gray-800">
-                {step.number}
-              </h3>
-              <h4 className="text-2xl font-semibold mt-2">{step.title}</h4>
-              <ul className="mt-4 list-disc pl-5 text-lg text-gray-700">
-                {step.points.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+
+        <WorkStages steps={steps} />
       </div>
     );
   }
