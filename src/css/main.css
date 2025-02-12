@@ -1,0 +1,52 @@
+/* @import "tailwindcss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  height: 10%;
+  padding: 10px 50px;
+  background-color: #ffcc00;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20vh; 
+  padding-left: 1vw;
+}
+
+.logo2 {
+  width: 80vw;
+  height: auto; 
+  max-width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.logo a:hover {
+  color: #ffcc00;
+}
+
+.logo-image {
+  width: 100px; 
+  height: auto;
+} */
